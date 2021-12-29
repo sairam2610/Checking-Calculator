@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+  int a, b,c;
+  char op;
+
+  printf("Enter the value of a:");
+  scanf("%d",&a);
+  printf("Enter the value of b:");
+  scanf("%d",&b);
+
+  printf("Enter a arithmetic operators:");
+  scanf(" %c", &op);
+
+  switch(op) {
+    case '+': printf("%d%c%d=%d\n",a,op,b,a+b);
+    break;
+    case '-': printf("%d%c%d=%d\n",a,op,b,a-b);
+    break;
+    case '*': printf("%d%c%d=%d\n",a,op,b,a*b);
+    break;
+    case '/': printf("%d%c%d=%d\n",a,op,b,a/b);
+    break;
+    case '%': printf("%d%c%d=%d\n",a,op,b,a%b);
+    break;
+    default: printf("Invaild Operator\n");
+  }
+  return 0;
+}
+
+/* 
+case 1:
+Enter the value of a:23
+Enter the value of b:32
+Enter a arithmetic operators:+
+23+32=55
+
+Case 2:
+Enter the value of a:5
+Enter the value of b:5
+Enter a arithmetic operators:*
+5*5=25
+
+Case 3:
+Enter the value of a:30
+Enter the value of b:20
+Enter a arithmetic operators:-
+30-20=10
+
+case 4:
+Enter the value of a:240
+Enter the value of b:40
+Enter a arithmetic operators:%
+240%40=0
+
+Case 5:
+Enter the value of a:33
+Enter the value of b:11
+Enter a arithmetic operators:/
+33/11=3
+https://github.com/sairam2610/Checking-Triangle.git
+*/
